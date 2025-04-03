@@ -42,9 +42,17 @@ This collection of notes provides a beginner-friendly guide to learning Svelte, 
     - Using `$props()` to receive props (Svelte 5 Runes)
 
 7.  **[Client-Side Routing with svelte-navigator](./07-routing-svelte-navigator.md)** 🧭
+
     - What is client-side routing?
     - Introduction to `svelte-navigator`
     - Installation and basic usage (linking concepts, not a full tutorial yet)
+
+8.  **[Data Flow Between Components](./08-data-flow-imports.md)** 🔄
+    - Imports and exports in Svelte applications
+    - Component communication patterns
+    - Working with utility functions
+    - Stores for global state management
+    - Context API for component trees
 
 ---
 

@@ -4,11 +4,11 @@
 
 ## Table of Contents
 
-- [Introducing Svelte 5 Runes](#introducing-svelte-5-runes)
-- [`$state()` for Reactive Variables](#using-state-for-reactive-variables)
-- [`$props()` for Component Properties](#working-with-props-for-component-properties)
-- [`$derived()` for Computed Values](#using-derived-for-computed-values)
-- [`$effect()` for Side Effects](#creating-side-effects-with-effect)
+- [Introducing Svelte 5 Runes](#introducing-svelte-5-runes-✨)
+- [`$state()` for Reactive Variables](#using-state-for-reactive-variables-🔄)
+- [`$props()` for Component Properties](#working-with-props-for-component-properties-🔄)
+- [`$derived()` for Computed Values](#using-derived-for-computed-values-🧮)
+- [`$effect()` for Side Effects](#creating-side-effects-with-effect-⚡)
 
 ## Introducing Svelte 5 Runes ✨
 
@@ -29,7 +29,7 @@ The `$state()` rune is used to declare **reactive state** within a component's `
 - Any variable declared using `$state()` becomes a source of reactivity.
 - When you _assign_ a new value to this variable, Svelte schedules an update to the component's output (DOM).
 
-### $state Example 🧪
+**Example:** 🧪
 
 --
 
@@ -134,7 +134,7 @@ The `$props()` rune allows components to accept external data through properties
 - Props are reactive - when a parent component updates a prop value, the child component automatically re-renders with the new value.
 - Props can include default values and type definitions.
 
-### $props Example 🧪
+**Example:** 🧪
 
 ```js
 <!-- Greeting.svelte -->
@@ -184,7 +184,7 @@ The `$derived()` rune creates values that automatically update when their depend
 - They are read-only - you cannot directly assign to a derived value.
 - They are perfect for calculations, transformations, or any value that depends on other state.
 
-### $derived Example 🧪
+**Example:** 🧪
 
 ```js
 <!-- TaxCalculator.svelte -->
@@ -242,7 +242,7 @@ The `$effect()` rune lets you run side effects whenever reactive dependencies ch
 - It then automatically runs again whenever any reactive values it references are updated.
 - Perfect for side effects like DOM manipulation, API calls, or synchronizing with external systems.
 
-### $effect Example 🧪
+**Example:** 🧪
 
 ```js
 <!-- LocalStorage.svelte -->

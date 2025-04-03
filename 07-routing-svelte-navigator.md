@@ -1,6 +1,6 @@
 # 7. Client-Side Routing with svelte-navigator 🧭
 
-[<- Back: Props](./06-props.md) | [Back to Main Note ->](./README.md)
+[<- Back: Props](./06-props.md) | [Next: Data Flow ->](./08-data-flow-imports.md)
 
 ## Table of Contents
 
