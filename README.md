@@ -1,8 +1,10 @@
 
-
 # Svelte Learning Notes (with Vite and Svelte 5 Runes)
 
-This collection of notes provides a beginner-friendly guide to learning Svelte, focusing on projects set up with Vite and utilizing the Svelte 5 Runes API for reactivity and props.
+my collection of notes on basics of Svelte, with focus on:
+
+-  project setup (Vite)
+-  Runes API ($state, $props)
 
 ## Learning Path
 
@@ -42,3 +44,19 @@ This collection of notes provides a beginner-friendly guide to learning Svelte, 
 
 ---
 *(These notes assume you are using Svelte 5 or later, which introduced the Runes API like `$state` and `$props`.)*
+
+---
+## dir
+```markdown
+svelte-learning-notes/
+├── lesson-note.md                  # Main entry point / Table of Contents
+├── 01-introduction.md              # What is Svelte? Why use it?
+├── 02-project-setup-vite.md        # Setting up a Svelte project with Vite
+├── 03-project-structure.md         # Understanding the files and folders
+├── 04-svelte-components.md         # Basic structure of a .svelte file
+├── 05-reactivity-state.md          # Understanding $state() (Svelte 5 Runes)
+├── 06-props.md                     # Understanding $props() (Svelte 5 Runes)
+├── 07-routing-svelte-navigator.md  # Introduction to routing with svelte-navigator
+└── README.md                       # (Optional) Overall description
+```
+
