@@ -1,44 +1,49 @@
-# 3. Understanding the Project Structure
+# 3. Understanding the Project Structure 📁
 
 [<- Back: Project Setup](./02-project-setup-vite.md) | [Next: Svelte Components ->](./04-svelte-components.md)
 
 ## Table of Contents
 
+- [Project Directory Structure](#project-directory-structure)
 - [Purpose of Key Files](#purpose-of-key-files)
 
-When you create a Svelte project with Vite, you get a standard set of files and folders. Here's a breakdown of the important ones:
+## Project Directory Structure 🗂️
 
-```markdown
+When you create a Svelte project with Vite, you get a standard set of files and folders.
+
+breakdown of the important ones:
+
+```
 my-svelte-app/
-├── node_modules/ # Stores project dependencies (managed by npm)
-├── public/ # Static assets copied directly to the build output
-│ └── vite.svg # Example static asset
-├── src/ # Your application's source code
-│ ├── app.css # Global CSS styles (can be imported in main.js or App.svelte)
-│ ├── assets/ # Assets processed by Vite (e.g., images, fonts)
-│ │ └── svelte.svg # Example processed asset
-│ ├── lib/ # Recommended place for reusable components, utilities, stores
-│ │ └── Counter.svelte # Example component
-│ ├── App.svelte # The main/root Svelte component
-│ └── main.js # The application entry point (initializes Svelte)
-├── .gitignore # Files/folders for Git to ignore
-├── index.html # The main HTML page template (Vite entry point)
-├── package.json # Project metadata and dependencies
-├── package-lock.json # Records exact dependency versions
-├── svelte.config.js # Svelte compiler configuration
-├── vite.config.js # Vite build tool configuration
-└── README.md # Project documentation
+├── node_modules/            # Project dependencies managed by npm 📦
+├── public/                  # Static assets copied directly to build output 🌐
+│   └── vite.svg             # Example static asset
+├── src/                     # Application source code 💻
+│   ├── app.css              # Global CSS styles 🎨
+│   ├── assets/              # Assets processed by Vite 🖼️
+│   │   └── svelte.svg       # Example processed asset
+│   ├── lib/                 # Reusable components, utilities, stores 🧰
+│   │   └── Counter.svelte   # Example component
+│   ├── App.svelte           # Main/root Svelte component 🌲
+│   └── main.js              # Application entry point 🚪
+├── .gitignore               # Files/folders ignored by Git 🙈
+├── index.html               # Main HTML template (Vite entry point) 📄
+├── package.json             # Project metadata and dependencies 📝
+├── package-lock.json        # Exact dependency versions 🔒
+├── svelte.config.js         # Svelte compiler configuration ⚙️
+├── vite.config.js           # Vite build tool configuration 🔧
+└── README.md                # Project documentation 📚
 ```
 
-## Purpose of Key Files
+## Purpose of Key Files 🗝️
 
-- **`index.html`**:
+- **`index.html`**: 📄
 
   - The main HTML file served to the browser.
   - Contains a `<body>` tag, often with a `<div id="app"></div>`.
   - Includes a `<script type="module" src="/src/main.js"></script>` tag, which tells Vite where your JavaScript application starts.
 
-- **`src/main.js`**:
+- **`src/main.js`**: 🚪
 
   - The JavaScript entry point for your application.
   - It imports the root Svelte component (`App.svelte`).
@@ -56,12 +61,12 @@ my-svelte-app/
   export default app;
   ```
 
-- **`src/App.svelte`**:
+- **`src/App.svelte`**: 🌲
 
   - The top-level Svelte component of your application.
   - This is where you typically start building your UI by composing other components.
 
-- **`src/lib/`**:
+- **`src/lib/`**: 🧰
 
   - A conventional directory to store reusable parts of your application, such as:
     - Shared Svelte components (`.svelte` files)
@@ -69,7 +74,7 @@ my-svelte-app/
     - Svelte stores (for state management)
   - You can import from here using aliases like `import MyComponent from '$lib/MyComponent.svelte';` (this requires configuration, often default in SvelteKit, but might need setup in plain Vite/Svelte). Or just use relative paths: `import Counter from './lib/Counter.svelte';`.
 
-- **`vite.config.js`**:
+- **`vite.config.js`**: 🔧
 
   - Configuration file for the Vite build tool.
   - Used to add plugins (like the Svelte plugin), configure the dev server, set up build options, define aliases, etc.
@@ -85,7 +90,7 @@ my-svelte-app/
   });
   ```
 
-- **`svelte.config.js`**:
+- **`svelte.config.js`**: ⚙️
 
   - Configuration file specifically for the Svelte compiler.
   - Used to define preprocessors (like for TypeScript or SCSS), compiler options, etc. Svelte 5 Runes mode is typically enabled by default or via this file.
@@ -103,5 +108,7 @@ my-svelte-app/
     },
   };
   ```
+
+---
 
 [<- Back: Project Setup](./02-project-setup-vite.md) | [Next: Svelte Components ->](./04-svelte-components.md)

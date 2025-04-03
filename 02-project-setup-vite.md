@@ -1,4 +1,4 @@
-# 2. Project Setup with Vite
+# 2. Project Setup with Vite 🛠️
 
 [<- Back: Introduction](./01-introduction.md) | [Next: Project Structure ->](./03-project-structure.md)
 
@@ -10,19 +10,19 @@ Vite is a modern frontend build tool that provides an extremely fast development
 - [Creating a New Svelte + Vite Project](#creating-a-new-svelte--vite-project)
 - [Installing Dependencies and Running the Dev Server](#installing-dependencies-and-running-the-dev-server)
 
-## Prerequisites
+## Prerequisites 📋
 
-- **Node.js:**
+- **Node.js:** 📦
   - Ensure you have Node.js installed (which includes npm). You can download it from [nodejs.org](https://nodejs.org/). Vite requires Node.js version 18+.
 
-## Creating a New Svelte + Vite Project
+## Creating a New Svelte + Vite Project 🆕
 
-    ```bash
-    # cd ./<project-root>
-    npm create vite@latest
-    ```
+```bash
+# cd ./<project-root>
+npm create vite@latest
+```
 
-4.  **Follow the prompts:**
+4.  **Follow the prompts:** 🖥️
 
     - **Project name:** 'my-svelte-app'
     - **Select a framework:** choose `Svelte`.
@@ -50,26 +50,28 @@ Vite is a modern frontend build tool that provides an extremely fast development
       npm run dev
     ```
 
-## Installing Dependencies and Running the Dev Server
+## Installing Dependencies and Running the Dev Server 🚀
 
-1.  **Navigate into your new project directory:**
+1.  **Navigate into your new project directory:** 📂
 
     ```bash
     cd my-svelte-app
     ```
 
-2.  **Install the necessary dependencies:**
+2.  **Install the necessary dependencies:** 📦
 
     ```bash
     npm install
     ```
 
-3.  **Start the development server:**
+3.  **Start the development server:** 🔥
 
     ```bash
     npm run dev
     ```
 
-Vite will start the development server and print a local URL (usually `http://localhost:5173/`). Open this URL in your web browser to see your new Svelte application running! The server features Hot Module Replacement (HMR), meaning changes you make to your code will often update in the browser instantly without a full page reload.
+Vite will start the development server and print a local URL (usually `http://localhost:5173/`). Open this URL in your web browser to see your new Svelte application running! The server features Hot Module Replacement (HMR), meaning changes you make to your code will often update in the browser instantly without a full page reload. ✨
+
+---
 
 [<- Back: Introduction](./01-introduction.md) | [Next: Project Structure ->](./03-project-structure.md)
