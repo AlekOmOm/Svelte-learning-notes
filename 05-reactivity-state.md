@@ -29,6 +29,47 @@ The `$state()` rune is used to declare **reactive state** within a component's `
 
 ## Example 🧪
 
+--
+
+Counter.svelte
+
+<script>
+  // Declare a reactive 'count' variable, initialized to 0
+  let count = $state(0);
+
+  function increment() {
+    // Assigning a new value triggers reactivity
+    count = count + 1;
+    // Or shorthand: count += 1;
+  }
+
+  function decrement() {
+    count = count - 1;
+    // Or shorthand: count -= 1;
+  }
+</script>
+
+<main>
+  <p>Current count: {count}</p>
+
+<button on:click={increment}>+</button>
+<button on:click={decrement}>-</button>
+
+</main>
+
+<style>
+  button { margin: 0 5px; }
+  main {
+    padding: 1em;
+    background-color: grey;
+    border-radius: 5px;
+    width: fit-content;
+    text-align: left;
+  }
+</style>
+
+--
+
 ```js
 <!-- Counter.svelte -->
 <script>
@@ -46,14 +87,24 @@ The `$state()` rune is used to declare **reactive state** within a component's `
     // Or shorthand: count -= 1;
   }
 </script>
-
-<p>Current count: {count}</p>
+<main>
+  <p>Current count: {count}</p>
 
 <button on:click={increment}>+</button>
 <button on:click={decrement}>-</button>
 
+</main>
+
 <style>
+
   button { margin: 0 5px; }
+  main {
+    padding: 1em;
+    background-color: grey;
+    border-radius: 5px;
+    text-align: left;
+  }
+
 </style>
 ```
 
