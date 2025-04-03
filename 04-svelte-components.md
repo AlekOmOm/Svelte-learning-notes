@@ -16,8 +16,33 @@ Svelte applications are built from **components**.
 A `.svelte` file usually consists of three sections:
 
 1.  **`<script>` block:** 📜 Contains the component's JavaScript logic, including state, props, and lifecycle functions.
-2.  **Template (HTML-like markup):** 🖼️ Defines the structure and content of the component's output.
+2.  **`Template (HTML-like markup)`:** 🖼️ Defines the structure and content of the component's output.
 3.  **`<style>` block (optional):** 💅 Contains CSS styles scoped specifically to this component.
+
+--
+
+ExampleComponent.svelte:
+
+<main>
+  <h1>Hello !</h1>
+  <p>This is a Svelte component.</p>
+  <button on:click={handleClick}>Click Me</button>
+</main>
+
+<!-- Scoped CSS -->
+<style>
+    main {
+      padding: 1em;
+      background-color: grey;
+      border-radius: 5px;
+    }
+  h1 {
+    color: rebeccapurple;
+  }
+  /* These styles only apply to elements within this component */
+</style>
+
+--
 
 ```js
 <!-- ExampleComponent.svelte -->
@@ -41,8 +66,9 @@ A `.svelte` file usually consists of three sections:
 <style>
   main {
     padding: 1em;
-    background-color: #f0f0f0;
+    background-color: grey;
     border-radius: 5px;
+    border: 2px solid #white;
   }
   h1 {
     color: rebeccapurple;

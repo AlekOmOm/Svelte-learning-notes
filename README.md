@@ -25,7 +25,7 @@ This collection of notes provides a beginner-friendly guide to learning Svelte, 
 
 4.  **[Svelte Component Basics](./04-svelte-components.md)** 📦
 
-    - The structure of a `.svelte` file (`<script>`, `HTML structures`, `<style>`)
+    - The structure of a `.svelte` file (`<script>`, `Template (HTML-like markup)`, `<style>`)
     - Basic template syntax (`{expression}`)
     - Handling events (`on:event`)
 
